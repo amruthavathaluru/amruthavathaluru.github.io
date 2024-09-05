@@ -1,0 +1,321 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eee2e6;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--text-color);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+  }
+  
+  nav .left a {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  nav .right a {
+    margin: 0 10px;
+  }
+  
+  nav .right a span {
+    margin-left: 5px;
+  }
+  
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+  }
+  
+  .hero-section .text h2 {
+    font-size: 36px;
+  }
+  
+  .hero-section .text p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  .hero-section .links a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .hero-section .links a:hover {
+    background-color: var(--link-color);
+    color: var(--text-color);
+  }
+  
+  .hero-section .headshot img {
+    width: 300px;
+    border-radius: 50%;
+  }
+  /* EDUCATION SECTION */
+.education-section {
+    padding: 20px 0;
+    margin-bottom: 50px;
+  }
+  
+  .education-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .education-section .education {
+    background-color: #fff;
+    padding: 15px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .education-section .education p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* INTERNSHIPS SECTION */
+  .internships-section {
+    padding: 20px 0;
+    margin-bottom: 50px;
+  }
+  
+  .internships-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .internships-section .internship {
+    background-color: #fff;
+    padding: 15px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .internships-section .internship h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .internships-section .internship p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .skills-section {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .skills-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .skills-section .cells {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .skills-section .cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid #d3d3d3;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .skills-section .cell img {
+    width: 30px;
+  }
+  
+  .projects-section {
+    margin-bottom: 100px;
+  }
+  
+  .projects-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .projects-section .project {
+    margin-bottom: 30px;
+  }
+
+/* Contact Section */
+.contact-section {
+    padding: 20px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left; /* Align the heading to the left */
+  }
+  
+  .contact-section .toggle-button {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #0c0c0c;
+    background-color:none;
+    border:1.5px solid #d3d3d3;
+    padding: 15px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Space between button and form */
+    transition: 0.3s;
+    text-align: center; /* Center the text inside the button */
+  }
+  
+  .contact-section .toggle-button:hover {
+    filter: brightness(0.9);
+  }
+  
+  .contact-section #contact-form {
+    background-color: #fff;
+    padding: 15px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  .contact-section #contact-form label {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section #contact-form input,
+  .contact-section #contact-form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #d3d3d3;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%; /* Full width for inputs and textarea */
+  }
+  
+  .contact-section #contact-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #0e0d0d;
+    background-color:none;
+    border: 1.5px  solid #d3d3d3;
+    padding: 15px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  .contact-section #contact-form button:hover {
+    filter: brightness(0.9);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .contact-section {
+      padding: 20px;
+    }
+  
+    .contact-section .toggle-button {
+      width: 100%; /* Full width button on smaller screens */
+    }
+  
+    .contact-section #contact-form {
+      width: 100%; /* Full width form on smaller screens */
+    }
+  }
+  
+  
+  @media (max-width: 850px) {
+    .hero-section .text h2 {
+      font-size: 28px;
+    }
+  
+    .hero-section .headshot img {
+      width: 250px;
+    }
+  
+    .projects-section h2,
+    .skills-section h2,
+    .contact-section h2 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .hero-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero-section .headshot img {
+      width: 200px;
+    }
+  
+    .skills-section .cells {
+      flex-direction: column;
+    }
+  
+    .contact-section .group {
+      flex-direction: column;
+    }
+  
+    .contact-section .group form {
+      width: 100%;
+    }
+  }
+  
